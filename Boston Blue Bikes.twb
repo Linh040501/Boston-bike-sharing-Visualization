@@ -1,0 +1,495 @@
+<div class='tableauPlaceholder' id='viz1722937138905' style='position: relative'>
+    <noscript>
+        <a href='#'>
+            <img alt=' ' src='https://public.tableau.com/static/images/Bo/Bostonbike-sharingAnalysis/finaldashboard/1_rss.png' style='border: none' />
+        </a>
+    </noscript>
+    <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https://public.tableau.com/' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='Bostonbike-sharingAnalysis/finaldashboard' />
+        <param name='tabs' value='yes' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/Bo/Bostonbike-sharingAnalysis/finaldashboard/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+    </object>
+</div>
+<script type='text/javascript'>
+    var divElement = document.getElementById('viz1722937138905');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+
+    if (divElement.offsetWidth > 800) {
+        vizElement.style.width = '100%';
+        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    } else if (divElement.offsetWidth > 500) {
+        vizElement.style.minWidth = '1000px';
+        vizElement.style.maxWidth = '100%';
+        vizElement.style.minHeight = '850px';
+        vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + 'px';
+    } else {
+        vizElement.style.width = '100%';
+        vizElement.style.minHeight = '950px';
+        vizElement.style.maxHeight = (divElement.offsetWidth * 1.77) + 'px';
+    }
+
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
+<div class='tableauPlaceholder' id='viz1722937324645' style='position: relative;'>
+    <noscript>
+        <a href='#'>
+            <img alt=' ' 
+                 src='https://public.tableau.com/static/images/Bo/Bostonbike-sharingAnalysis/Comparisionsidebyside/1_rss.png' 
+                 style='border: none;' />
+        </a>
+    </noscript>
+    <object class='tableauViz' style='display: none;'>
+        <param name='host_url' value='https://public.tableau.com/' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='Bostonbike-sharingAnalysis/Comparisionsidebyside' />
+        <param name='tabs' value='yes' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/Bo/Bostonbike-sharingAnalysis/Comparisionsidebyside/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+    </object>
+</div>
+
+<script type='text/javascript'>
+    // Get the div and object elements
+    var divElement = document.getElementById('viz1722937324645');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+
+    // Adjust the size of the visualization based on the container width
+    if (divElement.offsetWidth > 800) {
+        vizElement.style.width = '100%';
+        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    } else if (divElement.offsetWidth > 500) {
+        vizElement.style.minWidth = '1000px';
+        vizElement.style.maxWidth = '100%';
+        vizElement.style.minHeight = '850px';
+        vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + 'px';
+    } else {
+        vizElement.style.width = '100%';
+        vizElement.style.minHeight = '950px';
+        vizElement.style.maxHeight = (divElement.offsetWidth * 1.77) + 'px';
+    }
+
+    // Load the Tableau JavaScript API
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
+<div class='tableauPlaceholder' id='viz1722937409405' style='position: relative;'>
+    <noscript>
+        <a href='#'>
+            <img alt=' ' 
+                 src='https://public.tableau.com/static/images/Bo/Bostonbike-sharingAnalysis/PreparationData/1_rss.png' 
+                 style='border: none;' />
+        </a>
+    </noscript>
+    <object class='tableauViz' style='display: none;'>
+        <param name='host_url' value='https://public.tableau.com/' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='Bostonbike-sharingAnalysis/PreparationData' />
+        <param name='tabs' value='yes' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/Bo/Bostonbike-sharingAnalysis/PreparationData/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+    </object>
+</div>
+
+<script type='text/javascript'>
+    // Get the div and object elements
+    var divElement = document.getElementById('viz1722937409405');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+
+    // Adjust the size of the visualization
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+
+    // Load the Tableau JavaScript API
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
+<div class='tableauPlaceholder' id='viz1722937440172' style='position: relative;'>
+    <noscript>
+        <a href='#'>
+            <img alt=' ' 
+                 src='https://public.tableau.com/static/images/Bo/Bostonbike-sharingAnalysis/TrendsbyhoursofDayandCustomerType/1_rss.png' 
+                 style='border: none;' />
+        </a>
+    </noscript>
+    <object class='tableauViz' style='display: none;'>
+        <param name='host_url' value='https://public.tableau.com/' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='Bostonbike-sharingAnalysis/TrendsbyhoursofDayandCustomerType' />
+        <param name='tabs' value='yes' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/Bo/Bostonbike-sharingAnalysis/TrendsbyhoursofDayandCustomerType/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+    </object>
+</div>
+
+<script type='text/javascript'>
+    // Get the div and object elements
+    var divElement = document.getElementById('viz1722937440172');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+
+    // Adjust the size of the visualization
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+
+    // Load the Tableau JavaScript API
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
+<div class='tableauPlaceholder' id='viz1722937504759' style='position: relative;'>
+    <noscript>
+        <a href='#'>
+            <img alt=' '
+                 src='https://public.tableau.com/static/images/Bo/Bostonbike-sharingAnalysis/TrendbyWeekdayandUsertype/1_rss.png'
+                 style='border: none;' />
+        </a>
+    </noscript>
+    <object class='tableauViz' style='display: none;'>
+        <param name='host_url' value='https://public.tableau.com/' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='Bostonbike-sharingAnalysis/TrendbyWeekdayandUsertype' />
+        <param name='tabs' value='yes' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/Bo/Bostonbike-sharingAnalysis/TrendbyWeekdayandUsertype/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+    </object>
+</div>
+
+<script type='text/javascript'>
+    // Retrieve the div and object elements
+    var divElement = document.getElementById('viz1722937504759');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+
+    // Adjust the size of the visualization
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+
+    // Load the Tableau JavaScript API
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
+<div class='tableauPlaceholder' id='viz1722937536524' style='position: relative;'>
+    <noscript>
+        <a href='#'>
+            <img alt=' '
+                 src='https://public.tableau.com/static/images/Bo/Bostonbike-sharingAnalysis/WeekdayTrendbyUsertypeandTimeBlocks/1_rss.png'
+                 style='border: none;' />
+        </a>
+    </noscript>
+    <object class='tableauViz' style='display: none;'>
+        <param name='host_url' value='https://public.tableau.com/' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='Bostonbike-sharingAnalysis/WeekdayTrendbyUsertypeandTimeBlocks' />
+        <param name='tabs' value='yes' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/Bo/Bostonbike-sharingAnalysis/WeekdayTrendbyUsertypeandTimeBlocks/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+    </object>
+</div>
+
+<script type='text/javascript'>
+    // Get the div and object elements
+    var divElement = document.getElementById('viz1722937536524');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+
+    // Set the width and height of the visualization
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+
+    // Load the Tableau JavaScript API
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
+<div class='tableauPlaceholder' id='viz1722937565730' style='position: relative;'>
+    <noscript>
+        <a href='#'>
+            <img alt=' '
+                 src='https://public.tableau.com/static/images/Bo/Bostonbike-sharingAnalysis/UsertypeCount/1_rss.png'
+                 style='border: none;' />
+        </a>
+    </noscript>
+    <object class='tableauViz' style='display: none;'>
+        <param name='host_url' value='https://public.tableau.com/' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='Bostonbike-sharingAnalysis/UsertypeCount' />
+        <param name='tabs' value='yes' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/Bo/Bostonbike-sharingAnalysis/UsertypeCount/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+    </object>
+</div>
+
+<script type='text/javascript'>
+    // Get the div and object elements
+    var divElement = document.getElementById('viz1722937565730');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+
+    // Set the width and height of the visualization
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+
+    // Load the Tableau JavaScript API
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
+<div class='tableauPlaceholder' id='viz1722937617231' style='position: relative;'>
+    <noscript>
+        <a href='#'>
+            <img alt=' '
+                 src='https://public.tableau.com/static/images/Bo/Bostonbike-sharingAnalysis/Heatmap/1_rss.png'
+                 style='border: none;' />
+        </a>
+    </noscript>
+    <object class='tableauViz' style='display: none;'>
+        <param name='host_url' value='https://public.tableau.com/' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='Bostonbike-sharingAnalysis/Heatmap' />
+        <param name='tabs' value='yes' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/Bo/Bostonbike-sharingAnalysis/Heatmap/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+    </object>
+</div>
+
+<script type='text/javascript'>
+    // Get the div and object elements
+    var divElement = document.getElementById('viz1722937617231');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+
+    // Set the width and height of the visualization
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+
+    // Load the Tableau JavaScript API
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
+<div class='tableauPlaceholder' id='viz1722937644253' style='position: relative;'>
+    <noscript>
+        <a href='#'>
+            <img alt=' '
+                 src='https://public.tableau.com/static/images/Bo/Bostonbike-sharingAnalysis/CountCustomerrideswithsessonalfilter/1_rss.png'
+                 style='border: none;' />
+        </a>
+    </noscript>
+    <object class='tableauViz' style='display: none;'>
+        <param name='host_url' value='https://public.tableau.com/' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='Bostonbike-sharingAnalysis/CountCustomerrideswithsessonalfilter' />
+        <param name='tabs' value='yes' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/Bo/Bostonbike-sharingAnalysis/CountCustomerrideswithsessonalfilter/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+    </object>
+</div>
+
+<script type='text/javascript'>
+    // Retrieve the div and object elements
+    var divElement = document.getElementById('viz1722937644253');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+
+    // Adjust the size of the visualization
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+
+    // Load the Tableau JavaScript API
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
+<div class='tableauPlaceholder' id='viz1722937656178' style='position: relative;'>
+    <noscript>
+        <a href='#'>
+            <img alt=' '
+                 src='https://public.tableau.com/static/images/Bo/Bostonbike-sharingAnalysis/Counttotalrideswithseasonalfilter/1_rss.png'
+                 style='border: none;' />
+        </a>
+    </noscript>
+    <object class='tableauViz' style='display: none;'>
+        <param name='host_url' value='https://public.tableau.com/' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='Bostonbike-sharingAnalysis/Counttotalrideswithseasonalfilter' />
+        <param name='tabs' value='yes' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/Bo/Bostonbike-sharingAnalysis/Counttotalrideswithseasonalfilter/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+    </object>
+</div>
+
+<script type='text/javascript'>
+    // Retrieve the div and object elements
+    var divElement = document.getElementById('viz1722937656178');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+
+    // Adjust the size of the visualization
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+
+    // Load the Tableau JavaScript API
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
+<div class='tableauPlaceholder' id='viz1722937684233' style='position: relative;'>
+    <noscript>
+        <a href='#'>
+            <img alt=' '
+                 src='https://public.tableau.com/static/images/Bo/Bostonbike-sharingAnalysis/CountSubcriberrideswithsessonalfilter/1_rss.png'
+                 style='border: none;' />
+        </a>
+    </noscript>
+    <object class='tableauViz' style='display: none;'>
+        <param name='host_url' value='https://public.tableau.com/' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='Bostonbike-sharingAnalysis/CountSubcriberrideswithsessonalfilter' />
+        <param name='tabs' value='yes' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/Bo/Bostonbike-sharingAnalysis/CountSubcriberrideswithsessonalfilter/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+    </object>
+</div>
+
+<script type='text/javascript'>
+    // Retrieve the div and object elements
+    var divElement = document.getElementById('viz1722937684233');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+
+    // Adjust the size of the visualization
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+
+    // Load the Tableau JavaScript API
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
+<div class='tableauPlaceholder' id='viz1722937707341' style='position: relative;'>
+    <noscript>
+        <a href='#'>
+            <img alt=' '
+                 src='https://public.tableau.com/static/images/Bo/Bostonbike-sharingAnalysis/Rankstationdockproductivity/1_rss.png'
+                 style='border: none;' />
+        </a>
+    </noscript>
+    <object class='tableauViz' style='display: none;'>
+        <param name='host_url' value='https://public.tableau.com/' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='Bostonbike-sharingAnalysis/Rankstationdockproductivity' />
+        <param name='tabs' value='yes' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/Bo/Bostonbike-sharingAnalysis/Rankstationdockproductivity/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+    </object>
+</div>
+
+<script type='text/javascript'>
+    // Retrieve the div and object elements
+    var divElement = document.getElementById('viz1722937707341');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+
+    // Adjust the size of the visualization
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+
+    // Load the Tableau JavaScript API
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
