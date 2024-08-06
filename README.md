@@ -1,4 +1,5 @@
 # Boston Bike-Sharing Visualization
+Click here to view the visualization: https://public.tableau.com/views/Bostonbike-sharingAnalysis/Rankstationdockproductivity?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 This project utilizes the Boston Blue Bikes dataset, sourced from [Blue Bikes System Data](https://bluebikes.com/system-data), to analyze and visualize patterns in bike-sharing usage in the year 2022. 
 
@@ -44,5 +45,3 @@ This project utilizes the Boston Blue Bikes dataset, sourced from [Blue Bikes Sy
 - A line chart illustrating trip trends, filterable by user type, day of the week, and season.
 - A heatmap visualizing total trips by weekdays and hours.
 
-Click here to view the visualization:
-https://public.tableau.com/views/Bostonbike-sharingAnalysis/Rankstationdockproductivity?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
