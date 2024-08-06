@@ -39,4 +39,5 @@ This project utilizes the Boston Blue Bikes dataset from [Blue Bikes System Data
 ### The Final Dashboard Contains:
 - A count of total trips for two user types.
 - A line chart showing trip trends, filterable by user type, day of the week, and season.
-- A heatmap displaying the total number of trips across weekdays and hours.
+- A heatmap displaying the total number of trips across weekdays and hours. Click here to view the visualization:
+https://public.tableau.com/views/Bostonbike-sharingAnalysis/Rankstationdockproductivity?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
