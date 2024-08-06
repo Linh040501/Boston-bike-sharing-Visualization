@@ -1,0 +1,159 @@
+# Load necessary libraries for data manipulation and visualization
+library(readr)   # For reading CSV files
+library(tidyverse) # For data wrangling and visualization
+library(lubridate) # For handling date and time data
+library(ggplot2)  # For data visualization
+library(dplyr)    # For data manipulation
+library(tidyr)    # For data cleaning
+library(geosphere) # For geographic calculations
+
+# Import Bluebikes trip data for each month
+dataset_202201 <- read_csv("~/Downloads/202201-bluebikes-tripdata.csv") # January 2022 data
+dataset_202202 <- read_csv("~/Downloads/202202-bluebikes-tripdata.csv") # February 2022 data
+dataset_202203 <- read_csv("~/Downloads/202203-bluebikes-tripdata.csv") # March 2022 data
+dataset_202204 <- read_csv("~/Downloads/202204-bluebikes-tripdata.csv") # April 2022 data
+dataset_202205 <- read_csv("~/Downloads/202205-bluebikes-tripdata.csv") # May 2022 data
+dataset_202206 <- read_csv("~/Downloads/202206-bluebikes-tripdata.csv") # June 2022 data
+dataset_202207 <- read_csv("~/Downloads/202207-bluebikes-tripdata.csv") # July 2022 data
+dataset_202208 <- read_csv("~/Downloads/202208-bluebikes-tripdata.csv") # August 2022 data
+dataset_202209 <- read_csv("~/Downloads/202209-bluebikes-tripdata.csv") # September 2022 data
+dataset_202210 <- read_csv("~/Downloads/202210-bluebikes-tripdata.csv") # October 2022 data
+dataset_202211 <- read_csv("~/Downloads/202211-bluebikes-tripdata.csv") # November 2022 data
+dataset_202212 <- read_csv("~/Downloads/202212-bluebikes-tripdata.csv") # December 2022 data
+
+# Import the dataset containing Bluebikes station information
+dot_dataset <- read_csv("~/Downloads/current_bluebikes_stations.csv")
+
+# Combine all monthly datasets into a single dataset
+tripdata <- rbind(dataset_202201, dataset_202202, dataset_202203, dataset_202204,
+                  dataset_202205, dataset_202206, dataset_202207, dataset_202208,
+                  dataset_202209, dataset_202210, dataset_202211, dataset_202212)
+
+# Check the column names of the dataset
+colnames(tripdata)
+# [Output Example]
+# [1] "Starttime" "Endtime"   "TripDuration" "UserType" "BikeID" "StartStation" "EndStation"
+
+# Display the structure of the dataset
+str(tripdata)
+# [Output Example]
+# 'data.frame':   10000 obs. of  7 variables:
+#  $ Starttime   : POSIXct, format: "2024-08-01 00:00:00" "2024-08-01 00:15:00" ...
+#  $ Endtime     : POSIXct, format: "2024-08-01 00:30:00" "2024-08-01 00:45:00" ...
+#  $ TripDuration: num  30 15 45 60 ...
+#  $ UserType    : Factor w/ 2 levels "Subscriber","Customer": 1 1 2 2 ...
+#  $ BikeID      : Factor w/ 100 levels "B001","B002",...
+#  $ StartStation: Factor w/ 50 levels "Station A","Station B",...
+#  $ EndStation  : Factor w/ 50 levels "Station X","Station Y",...
+
+# Generate a summary of the dataset
+summary(tripdata)
+# [Output Example]
+# Starttime          Endtime            TripDuration       UserType   
+# Min.   :2024-08-01 00:00:00   Min.   :2024-08-01 00:15:00   Min.   : 5.0   Subscriber:7000  
+# 1st Qu.:2024-08-01 06:00:00   1st Qu.:2024-08-01 06:15:00   1st Qu.:15.0   Customer :3000  
+# Median :2024-08-01 12:00:00   Median :2024-08-01 12:15:00   Median :30.0                    
+# Mean   :2024-08-01 12:00:00   Mean   :2024-08-01 12:15:00   Mean   :35.4                    
+# 3rd Qu.:2024-08-01 18:00:00   3rd Qu.:2024-08-01 18:15:00   3rd Qu.:45.0                    
+# Max.   :2024-08-01 23:59:59   Max.   :2024-08-01 23:59:59   Max.   :120.0                    
+# BikeID         StartStation     EndStation     
+# B001:100        Station A:200   Station X:250  
+# B002:100        Station B:180   Station Y:230  
+# B003:100        Station C:170   Station Z:200  
+# ...             ...             ...
+
+
+# Check for unusual values in the 'tripduration' column
+std_dev_tripduration <- sd(tripdata$tripduration)
+print(std_dev_tripduration)
+
+# Note: The maximum value of 'tripduration' exceeds 3 standard deviations from the mean.
+# Further inspection is needed to validate if this is an outlier.
+
+# Convert all blank values to NA
+tripdata <- lapply(tripdata, function(x) {
+  if (is.character(x)) {
+    x[x == ""] <- NA
+    x
+  } else {
+    x
+  }
+})
+
+# Remove all rows with NA values
+tripdata <- na.omit(tripdata)
+
+# Convert the list back to a data frame
+tripdata <- as.data.frame(tripdata)
+
+# Define a function to remove extra spaces from character columns
+remove_extra_spaces <- function(df) {
+  df[] <- lapply(df, function(x) {
+    if (is.character(x)) {
+      # Trim leading and trailing spaces, then remove extra spaces between words
+      x <- gsub("^\\s+|\\s+$", "", x) # Remove leading and trailing spaces
+      x <- gsub("\\s{2,}", " ", x) # Replace multiple spaces with a single space
+    }
+    return(x)
+  })
+  return(df)
+}
+
+# Apply the function to remove extra spaces from the dataset
+tripdata <- remove_extra_spaces(tripdata)
+
+# Check for unique values in the 'usertype' column to identify any spelling errors or misfiled values
+unique_usertype <- unique(tripdata$usertype)
+print(unique_usertype)
+
+# Calculate distance between start and end stations using latitude and longitude
+tripdata <- tripdata %>%
+  rowwise() %>%
+  mutate(
+    distance_km = distHaversine(
+      c(`start station longitude`, `start station latitude`), 
+      c(`end station longitude`, `end station latitude`)
+    ) / 1000 # Convert meters to kilometers
+  ) %>%
+  ungroup()
+
+# Add a new column to categorize the time of day when the trip started
+tripdata <- tripdata %>%
+  mutate(
+    started_hour = hour(starttime),  # Extract hour from 'starttime'
+    time_block = case_when(
+      started_hour >= 0 & started_hour < 6  ~ "Night",
+      started_hour >= 6 & started_hour < 12 ~ "Morning",
+      started_hour >= 12 & started_hour < 18 ~ "Afternoon",
+      started_hour >= 18 & started_hour < 24 ~ "Evening"
+    )
+  )
+
+# Add columns to specify whether the trip occurred on a weekend or a weekday
+tripdata <- tripdata %>%
+  mutate(
+    day_of_week = weekdays(starttime),
+    weekend_or_weekday = ifelse(day_of_week %in% c("Saturday", "Sunday"), "Weekend", "Weekday")
+  )
+
+# Calculate total and average trip duration for each station, categorized by day of the week
+total_duration_by_station_and_day <- tripdata %>%
+  group_by(`start station name`, day_of_week) %>%
+  summarise(
+    total_trip_duration = sum(tripduration, na.rm = TRUE),
+    count_of_trips = n(), 
+    .groups = 'drop'
+  )
+
+# Calculate average trip duration in minutes and hours
+average_duration_by_station_and_day <- total_duration_by_station_and_day %>%
+  mutate(
+    avg_trip_duration_minutes = total_trip_duration / count_of_trips,
+    avg_trip_duration_hours = avg_trip_duration_minutes / 60
+  ) %>%
+  select(`start station name`, day_of_week, count_of_trips, avg_trip_duration_minutes, avg_trip_duration_hours)
+
+
+# Join with additional dataset (assuming dot_dataset is pre-loaded) and select relevant columns
+result_left <- left_join(tripdata, dot_dataset, by = c("start.station.name" = "NAME")) %>%
+  select(-time_block, -day_of_week, -weekend_or_weekday, -Number, -Lat, -Long, -Seasonal.Status, -Municipality, -Station.ID)
