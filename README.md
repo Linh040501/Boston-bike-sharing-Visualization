@@ -1,6 +1,8 @@
 # Boston Bike-Sharing Visualization
 
-This project utilizes the Boston Blue Bikes dataset, sourced from [Blue Bikes System Data](https://bluebikes.com/system-data), to analyze and visualize patterns in bike-sharing usage.
+This project utilizes the Boston Blue Bikes dataset, sourced from [Blue Bikes System Data](https://bluebikes.com/system-data), to analyze and visualize patterns in bike-sharing usage in the year 2022. 
+
+**Tools:** Rstudio, Tableau.
 
 ## Step 1: Data Cleaning Using R
 
@@ -9,6 +11,7 @@ This project utilizes the Boston Blue Bikes dataset, sourced from [Blue Bikes Sy
 - The dataset was selected from the official website to ensure it adheres to the principles of Reliability, Originality, Comprehensiveness, Currency, and Citatability (ROCCC).
 
 ### Data Cleaning Process
+1, In the initial phase, we perform these tasks
 - Performed an initial examination of the dataset and identified an anomalous value in the `tripduration` column (3401096).
   - Hypothesized that this could be an outlier or a typographical error.
   - Applied statistical methods including Standard Deviation calculations and Chebyshev's theorem. The value exceeded 3 standard deviations, confirming it as an outlier.
