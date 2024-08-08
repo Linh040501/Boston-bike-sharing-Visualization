@@ -31,12 +31,29 @@ This project utilizes the Boston Blue Bikes dataset, sourced from [Blue Bikes Sy
 ## Step 2: Data Visualization
 
 - Developed a table presenting total trips per station, with trip durations in minutes and hours. Included a filter to adjust the timeline by day of the week.
+<img width="820" alt="Preparation Data" src="https://github.com/user-attachments/assets/3534bd16-3859-4089-906b-aed76e0a3c47">
 - Created a dynamic bar chart illustrating the trend of user types by counting trips per hour. Added filters for user types and highlighted peak activity hours.
+  ![Trends by hours of Day and Customer Type](https://github.com/user-attachments/assets/2c9a945e-9fc8-4081-86b6-47b2d4f41ea3)
+
 - Constructed a table showing trip trends by weekday for two user types, including percentage calculations.
+![Trend by Weekday and Usertype](https://github.com/user-attachments/assets/aa96a57f-4c63-40d6-9d7b-a2eb21c79af3)
+
+
 - Designed a bar chart depicting trip trends by weekday for each user type, segmented by time of day (morning, afternoon, evening, night).
+![Weekday Trend by Usertype and Time Blocks](https://github.com/user-attachments/assets/5998286f-5572-4033-b2a1-5a2e50500d53)
+
+  
 - Generated a heatmap representing total trips across weekdays and hours.
+![Heatmap](https://github.com/user-attachments/assets/43ac54e8-ce16-4522-ae47-0e613bd1b5d2)
+
+
 - Produced two line charts comparing total rides for two user types, with a side-by-side comparison and filters for day of the week and season.
+![Comparision_ side by side](https://github.com/user-attachments/assets/1a55bf7b-a765-461b-bc2e-7d0fbaacf4a1)
+
+  
 - Created a map displaying the total trips for each station and the number of dots, with an analysis of dot productivity and subsequent ranking.
+  ![Rank station dock productivity](https://github.com/user-attachments/assets/d55010ce-ac59-4d60-b53f-3527ce157962)
+
 
 ## Step 3: Building the Tableau Dashboard
 
@@ -44,4 +61,5 @@ This project utilizes the Boston Blue Bikes dataset, sourced from [Blue Bikes Sy
 - Total trip counts segmented by user type.
 - A line chart illustrating trip trends, filterable by user type, day of the week, and season.
 - A heatmap visualizing total trips by weekdays and hours.
+![final dashboard (1)](https://github.com/user-attachments/assets/e8a90fa0-4c54-4981-9161-6520e95c6507)
 
